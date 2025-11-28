@@ -1,0 +1,615 @@
+body {
+    color: #222;
+    font: 18px/30px Georgia, serif;
+    width: 960px;
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+    padding: 0 20px;
+    background: linear-gradient(to bottom, #ecdbc3, #997346);
+}
+
+::-moz-selection{
+    background: #106d4a; color: #fff; text-shadow: none;
+} 
+::selection{
+    background: #106d4a; color: #fff; text-shadow: none;
+}
+
+h1, h2, h3{
+    font-weight: 800;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(132, 4, 4);
+}
+
+a:hover,
+a:focus{
+    text-decoration: underline;
+}
+
+.logo{
+    margin: 0;
+    position: relative;
+    top: -7px;
+    z-index: 2;
+}
+
+p{
+    margin: 0 0 24px 0;
+}
+
+.logo a {
+	background: url('logo.png') left top no-repeat;
+	display: block;
+	width: 960px;
+	height: 105px;
+	text-indent: -9999px;
+}
+
+.cover{
+    background: #fff url('pozadie.png') 50% 0px no-repeat;
+    height: 470px;
+    margin-top: -125px;
+    position: relative;
+    z-index: 1;
+}
+
+.badge{
+    background: #744406;
+    background: rgb(116 68 6 / 72%);
+    display: block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+
+    color: #fff;
+    font-size: 54px;
+    line-height: 40px;
+    font-weight: 800;
+    letter-spacing: -2px;
+    text-align: center;
+    text-decoration: none;
+
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.badge small{
+    font-size: 16px;
+    line-height: 16px;
+    font-style: italic;
+    font-weight: normal;
+    letter-spacing: 0;
+    font-family: Georgia, serif;
+    display: block;
+    padding-top: 28px;
+}
+
+.post-header{
+    text-align: center;
+}
+
+.post-meta{
+    font-style: italic;
+}
+
+.post-meta time{
+    white-space: nowrap;
+}
+
+.post-meta time:before{
+    content: '.';
+    font-style: normal
+}
+
+.author{
+    font-style: normal;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.post-title{
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 800;
+    letter-spacing: -2px;
+    margin: 0;
+    color: #c66b3a;
+}
+
+.post-content h2{
+    font-size: 28px;
+    line-height: 30px;
+    color: #a76611;
+    margin-top: 36px;
+    margin-bottom: 12px;
+}
+
+.post-content h3{
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.post-content p, h2, h3{
+    margin-left: 130px ;
+    margin-right: 130px;
+}
+
+.post-content p:first-child{
+    font-size: 24px;
+    line-height: 36px;
+    margin-left:0 ;
+    margin-right:0;
+}
+
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
+.pullquote{
+    color:#787878;
+    max-width: 300px
+}
+
+.pullquote.float-left{
+    margin:24px 34px 24px 0;
+}
+
+.pullquote.float-right{
+    margin:24px 0 24px 34px;
+}
+
+.pullquote q{
+    font-size: 24px;
+    line-height: 36px;
+    font-style: italic;
+}
+
+.pullquote ol, 
+.pullquote ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.pullquote li{
+    border-bottom: 1px dotted #aaa;
+    padding: 2px 10px;
+}
+
+.pullquote li :last-child{
+    border-bottom: none;
+}
+
+.post-footer{
+    width: 700px;
+    margin: 60px auto;
+    background: #bea589;
+    padding: 20px;
+    z-index: 1;
+    position: relative;
+    border-radius: 8px;
+
+}
+
+.post-footer h3{
+    font-size: 18px;
+}
+
+.post-footer > h3{
+    text-align: center;
+}
+
+.photo{
+    float: left;
+}
+
+.photo img{
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 10px solid rgb(154, 82, 82);
+}
+
+.byline h3,
+.byline p{
+    font-size: 14px;
+    line-height: 24px;
+    margin-left: 160px;
+}
+
+.byline h3 a {
+    color:rgb(155, 94, 45)
+}
+
+.pre-footer{ 
+    border-top: 1px dashed #121111;
+    border-bottom: 1px dashed #121111;
+    margin-top: 60px;
+}
+
+.pre-footer blockquote{
+    font-weight: normal !important;
+}
+.reviews{
+    list-style: none;
+    padding-left: 0;
+    overflow: hidden;
+}
+
+.reviews li{
+    font-size: 14px;
+    line-height: 24px;
+
+
+    float: left;
+    width: 220px;
+
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+}
+
+
+.reviews li:before{
+    content: '"';
+    color: #c66b3a;
+    font-size: 60px;
+    font-style: italic;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+}
+
+.reviews blockquote{
+    font-style: italic;
+}
+
+.review-byline{
+    
+    padding-left: 40px;
+    margin-bottom: 8px;
+}
+
+.review-byline:before{
+    content: '-';
+    color: aqua;
+}
+
+.global-footer{
+    color:#ad4242;
+    font-size: 14px;
+    text-align: right;
+    padding: 15px 10px;
+    border-top: 1px solid #343735;
+}
+
+#meno{
+    font-size: 20px;
+}
+
+.bio ul{
+    font-size: 16px;
+    list-style: none;
+}
+
+.bio ul li:nth-child(1) a::before {
+    content: "✉️";
+    margin-right: 8px;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.bio ul li:nth-child(2) a::before {
+    content: "📞"; 
+    margin-right: 8px;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.bio ul li:nth-child(3) a::before {
+    content: "🔗"; 
+    margin-right: 8px;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.purple{
+    color: purple;
+    background-color: rgb(218, 218, 218);
+}
+
+.group:before,
+.group:after{
+    content: " ";
+    display: table;
+}
+.group:after{
+    clear: both;
+}
+.group{
+    zoom: 1;    
+}
+
+code{
+    color:#fff;
+    background: #9f3fa3;
+    display: block;
+    padding: 25px;
+    font:14px/24px Monaco, Consolas, "Lucida Console", monospace;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.controls{
+    text-align: center;
+}
+
+.btn{
+    background: #ae9393;
+    border: 1px solid #605656;
+    font-size: 16px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-success{
+    background: rgb(72, 29, 13);
+    color: #ebe2e2;
+    border: 1px solid #0f4329;
+}
+
+.btn-fail{
+    background: rgb(126, 81, 30);
+    color: #ebe2e2;
+    border: 1px solid #430707;
+}
+
+.bezciary{
+    text-decoration: none;
+}
+
+h4{
+    font-size: 16px;
+    padding-top: 40px;
+    padding-left: 370px;
+}
+
+.tabulka body{
+    padding: 30px;
+}
+.tabulka h1{
+    color: #a17c0e;
+}
+.tabulka table{
+    color: #fff;
+    border-collapse: separate; 
+    border-spacing: 0; 
+    background: #734a50;
+    border-radius: 12px; 
+    width: 100%;
+    overflow: hidden; 
+    width: 90%;
+    max-width: 1200px;
+    min-width: 600px;
+}
+
+.tabulka table, th, td {
+    border: 2px solid #9a7f71; 
+}
+
+.tabulka th, td{
+    border-bottom: 1px solid #9a7171;
+    padding: 10px;
+
+    color: #a17c0e;
+    text-align: center;
+    font-weight: bold;
+
+    height: 100px;
+    vertical-align: middle;
+}
+
+.tabulka th{
+    color: rgb(171, 86, 86);
+}
+
+.tabulka tbody td:not(:last-child),
+.tabulka thead th:not(:last-child) {
+    border-right: 1px solid #9a7171; 
+}
+
+#ice{
+    padding-top: 40px;
+}
+
+@media screen and (max-width: 1000px){
+    body{
+        width: 100%;
+        padding: 0;
+    }
+
+    .cover{
+        margin-top: -150px;
+
+    }
+
+    .logo a{
+        width:100%;
+        background-position: -20px 10px;
+    }
+
+    .badge{
+        right: 20px;
+    }
+
+    article{
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .post-content p,
+    .post-content h2,
+    .post-content h3{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .reviews{
+        /*margin-left: 50px;*/
+        /*margin-bottom: 0;*/
+        text-align: center;
+    }
+
+    .reviews li{
+        float: none;
+        display: inline-block;
+        vertical-align: top;
+        width: 40%;
+        /*min-height: 150px;....ak by citaty nemali rovnaku velkost=vysku...takto to trosku uhladi.... a ak by mali medzi sebou velku medzeru, treba upravit aj margin bottom v reviews*/
+        text-align: left;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+   
+    .logo{
+        top:0px;
+    }
+
+    .logo a{
+        color: #622525e0;
+        background: none;
+        text-indent: 0;
+        text-decoration: none;
+        font-size: 96px;
+        line-height: 76px;
+        letter-spacing: -9px;
+        text-align: center;
+    }
+
+    .tabulka h1,
+    table{
+        display: none;
+    }
+
+    h4{
+        padding-left: 0;
+        text-align: center;
+    }
+    .post-footer{
+        width: 80%;
+        text-align: center;
+    }
+
+    .photo{
+        float: none;
+    }
+
+    .post-footer > h3{
+        display: none;
+    }
+
+    .post-footer h3,
+    .post-footer p{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .bio{
+        margin-right: 40px;
+    }
+
+    .global-footer{
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 720px){
+    .pullquote.float-left,
+    .pullquote.float-right{
+        float: none;
+        margin-left: 0;
+        margin-right: 0;
+        max-width: none;
+        text-align: center;
+        padding: 25px 0;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .pullquote li{
+        border: none;
+    }
+
+    .pullquote ul{
+        margin-bottom: 0;
+    }
+
+    /*.reviews{
+        margin-left: 0;
+    }*/
+
+    .reviews li{
+        display: block;
+        width: 100%;
+        /*min-height: 0; ale ja som nedavala */
+        text-align: center;
+        margin: 0 0 30px 0;
+    }
+
+    .reviews blockquote{
+        margin-bottom: 0px;
+    }
+
+    .review-byline{
+        padding-left: 0;
+    }
+
+    .reviews li:before,
+    .review-byline:before{
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 600px){
+    .post-meta time{
+        display: block;
+    }
+
+    .written-by,
+    .post-meta time:before {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .logo{
+        top: 10px;
+    }
+
+    .logo a{
+    font-size: 86px;
+    line-height: 66px;
+    }
+
+    article{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
